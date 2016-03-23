@@ -1,19 +1,26 @@
 body {
   background: #000 !important;
+  font-size: 0.8vw;
 }
 
 #messagebuffer {
   width: auto;
-  height: 71.5% !important;
+  height: auto !important;
   color: rgb(238, 238, 238);
   background-color: rgba(30,34,37,0.62);
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+  flex: 2;
 }
 
 #userlist {
   float: none !important;
   width: auto !important;
-  height: 20% !important;
-  background-color: rgba(34,38,41,0.82);
+  height: auto !important;
+  background-color: rgba(34,38,41,0.3);
+  max-height: 25vh;
+  font-size: 0.8vw;
+  flex: 1;
 }
 
 .col-lg-5 {
@@ -23,8 +30,7 @@ body {
 }
 
 #footer {
-  min-height: 10px !important;
-  margin-top: 0px;
+  display: none;
 }
 
 .container .credit {
@@ -43,19 +49,19 @@ a:hover {
   background-color: transparent !important;
 }
 
-.navbar-brand {
-  padding: 2px 4px !important;
-  height: 30px;
+.navbar-nav > li > a {
+  padding-top: 0.45vh !important;
+  padding-bottom: 0.45vh;
+  line-height: 2vh;
 }
 
-.navbar-nav > li > a {
-  padding-top: 4px !important;
-  padding-bottom: 5px;
+.nav > li > a {
+  padding: 1vh 0.5vw 0;
 }
 
 .navbar {
-  min-height: 30px;
-  max-height: 30px;
+  min-height: 3vh;
+  max-height: 3vh;
   margin-bottom: 0px;
 }
 
@@ -77,31 +83,29 @@ a:hover {
 
 #chatheader, #currenttitle {
   background-color: transparent !important;
-}
-
-#chatheader {
-  font-size: 0.7vw;
+  height: 2.5vh;
+  padding-top: 0.2vh;
 }
 
 .col-lg-7 {
-  width: 73%;
+  width: 100vw;
 }
 
 .navbar-text {
-  margin-top: 4px;
-  margin-right: 5px;
+  margin-top: 0.45vh;
+  margin-right: 0.3vw;
 }
 
 .navbar-inverse .navbar-link:hover {
   color: #49f9f9;
 }
 
-.navbar-fixed-top, .navbar-fixed-bottom {
-  right: 10vw;
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding: 0px;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-right: 0px;
+.col-md-12, .col-lg-12, #rightpane {
+  max-width: 90vw;
 }
 
 .qe_title {
@@ -127,14 +131,29 @@ a:hover {
   margin-right: 10px;
 }
 
+#queue {
+  max-width: 90vw;
+  opacity: 0.1;
+  filter: blur(1px);
+}
+
+#queue:hover {
+  opacity: 1;
+  filter: blur(0px);
+}
+
 #queue > li > .btn-group {
   float: right;
-  right: 0px;
+  right: 0.2vw;
   position: absolute;
 }
 
+.queue_active {
+  background-color: rgba(65,69,74,0.4) !important;
+}
+
 .row {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .clearfix::after, .dl-horizontal dd::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
@@ -146,7 +165,22 @@ a:hover {
 }
 
 #chatwrap {
-  height: 100% !important;
+  height: 90vh !important; /* 94.6vh full height */
+  width: 10vw !important;
+  margin: 3vh 0 0 0;
+  padding: 0; /* 0 0 0 0.5vw;
+  background-color: RGBA(20, 23, 72, 0.5);
+  background-clip: padding-box;
+  background-size: 10px 100%; */
+  display: flex;
+  flex-direction: column;
+  opacity: 0.1;
+  filter: blur(1px);
+}
+
+#chatwrap:hover {
+  opacity: 1;
+  filter: blur(0px);
 }
 
 .server-whisper {
@@ -171,4 +205,140 @@ a:hover {
 #plcontrol:after {
   content: "Make sure, that you use Modern theme and Synchtube + Fluid layout!!! If not go in Options and setup it!";
   margin-left: 4px;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+#currenttitle {
+  text-align: center;
+  height: 3vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4vh;
+  top: 0.3vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+a.navbar-brand { 
+  display: none;
+}
+
+.navbar-header {
+  background-image: url('https://discuss.moe/uploads/default/original/2X/b/b4fbe44447b2b19311edada03ae9041c650cbabe.png');
+  background-size: 11.2vh 3vh;
+  background-repeat: no-repeat;
+  width: 11.2vh;
+  height: 3vh;
+}
+
+#videowrap {
+  position: fixed;
+  left: 0px;
+  padding: 0px;
+  top: 3vh;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+  padding: 0px;
+  height: calc(100vh - 60px);
+}
+
+#controlsrow {
+  margin: 0px;
+  padding: 0px;
+  bottom: 0px;
+  position: fixed;
+  height: 2.5vh;
+  z-index: 2;
+}
+
+#playlistrow {
+  position: fixed;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.alert-danger {
+  width: 90vw;
+}
+
+#addfromurl {
+  margin-bottom: 3vh;
+  width: 90vw;
+}
+
+#rightpane {
+  z-index: 1;
+}
+
+#rightcontrols {
+  margin: 0px 5vw;
+  width: 90vw;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  font-size: 1vh;
+  padding: 0.5vh 0.5vw;
+}
+
+#plmeta {
+  height: 2.5vh;
+  width: 100vw;
+}
+
+.navbar-nav {
+  font-size: 1.4vh;
+}
+
+#usercount {
+  font-size: 0.8vw;
+}
+
+.timestamp {
+  font-size: 0.6vw;
+}
+
+#chatheader .label {
+  margin-left: 0px !important;
+  margin-top: 0.2vh;
+}
+
+.userlist_item {
+  margin-left: 0.1vw;
+}
+
+#customembed, #playlistmanager {
+  width: 90vw;
+}
+
+.profile-box {
+  position: absolute;
+  left: 0px !important;
+  top: 4.5vh !important;
+  height: 250px;
+}
+
+.alert-warning {
+  max-width: 90vw;
+}
+
+/* iframe CSS, use Stylish for apply: https://userstyles.org/styles/125893 */
+.ytp-mute-button.ytp-button {
+  position: fixed;
+  right: calc(10vw + 54px);
+  top: 0px;
+  height: 30px;
+}
+
+.ytp-volume-slider {
+  position: fixed;
+  height: 20px;
+  top: 5px;
+  right: 10vw;
+  width: 52px;
 }
