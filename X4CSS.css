@@ -1,0 +1,174 @@
+body {
+  background: #000 !important;
+}
+
+#messagebuffer {
+  width: auto;
+  height: 71.5% !important;
+  color: rgb(238, 238, 238);
+  background-color: rgba(30,34,37,0.62);
+}
+
+#userlist {
+  float: none !important;
+  width: auto !important;
+  height: 20% !important;
+  background-color: rgba(34,38,41,0.82);
+}
+
+.col-lg-5 {
+  width: 10% !important;
+  position: fixed;
+  right: 0px;
+}
+
+#footer {
+  min-height: 10px !important;
+  margin-top: 0px;
+}
+
+.container .credit {
+  margin: 1px 0 !important;
+}
+
+a {
+  color: rgba(120,126,132,0.45) !important;
+}
+
+a:hover {
+  color: #49f9f9 !important;
+}
+
+.navbar-inverse {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  padding: 2px 4px !important;
+  height: 30px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 4px !important;
+  padding-bottom: 5px;
+}
+
+.navbar {
+  min-height: 30px;
+  max-height: 30px;
+  margin-bottom: 0px;
+}
+
+.dropdown-menu {
+  background-color: rgba(20,22,26,0.26);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: rgba(255,255,255,1) !important;
+}
+
+#mainpage {
+  padding-top: 0px !important;
+}
+
+.container-fluid {
+  padding-left: 0px;
+}
+
+#chatheader, #currenttitle {
+  background-color: transparent !important;
+}
+
+#chatheader {
+  font-size: 0.7vw;
+}
+
+.col-lg-7 {
+  width: 91.5%;
+}
+
+.navbar-text {
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+.navbar-inverse .navbar-link:hover {
+  color: #49f9f9;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  right: 10vw;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 0px;
+}
+
+.qe_title {
+  color: #FFF !important;
+}
+
+#newpollbtn, #emotelistbtn {
+  display: none;
+}
+
+#wrap {
+  margin: 0 auto 0px;
+  padding: 0 0 0px;
+  overflow: hidden;
+}
+
+.queue_entry {
+  display: inline-flex;
+  width: 100%;
+}
+
+.qe_title {
+  margin-right: 10px;
+}
+
+#queue > li > .btn-group {
+  float: right;
+  right: 0px;
+  position: absolute;
+}
+
+.row {
+  margin-right: 0px;
+}
+
+.clearfix::after, .dl-horizontal dd::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
+  clear: none;
+}
+
+.vertical-spacer {
+  margin-top: 1px;
+}
+
+#chatwrap {
+  height: 100% !important;
+}
+
+.server-whisper {
+  font-style: bold;
+  color: #BBB;
+}
+
+.profile-image {
+  max-width:250px;
+  max-height:250px;
+  border:1px solid #aaa;
+  border-radius:15px;
+  float: none;
+}
+
+.profile-box {
+  max-width:270px !important;
+  padding:5px;
+  display: inline-grid;
+}
+
+#plcontrol:after {
+  content: "Make sure, that you use Modern theme and Synchtube + Fluid layout!!! If not go in Options and setup it!";
+  margin-left: 4px;
+}
