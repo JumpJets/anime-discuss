@@ -354,6 +354,7 @@ a.navbar-brand {
   background-color: rgba(210, 210, 234, 0.7);
 }
 
+/* iframe CSS, use Stylish for apply: https://userstyles.org/styles/125893 */
 .ytp-mute-button.ytp-button {
   position: fixed;
   right: calc(10vw + 54px);
