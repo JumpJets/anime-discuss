@@ -29,6 +29,17 @@
     // example: iframeDoc2.body.style.backgroundColor = 'orange';
     iframeDoc2.body.appendChild(cssLink);
   }
-}
+}*/
+
+(function() {
+delete toggleUserlist;
+toggleUserlist = undefined;
+toggleUserlist = null;
+
+var toggleUserlist=function(){
+	var e=USEROPTS.layout.match(/synchtube/)?"glyphicon-chevron-left":"glyphicon-chevron-right";
+	"0vh !important"===$("#userlist").css("height")?($("#userlist").show(),$("#userlisttoggle").removeClass(e).addClass("glyphicon-chevron-down")):($("#userlist").hide(),$("#userlisttoggle").removeClass("glyphicon-chevron-down").addClass(e)),scrollChat()
+};
+})();
  
 setTimeout(fixytvolume, 1000);*/
